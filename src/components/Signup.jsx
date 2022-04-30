@@ -1,10 +1,15 @@
 import React from 'react';
+import {Formik, Form} from "formik";
 
 const Signup = () => {
     return (
-        <div>
-            <h1>Sign Up</h1>
-        </div>
+        <Formik>
+            {formik => (
+                <div>
+                    <h1 className={'my-4 font-weight-bold-display-4'}>Sign Up</h1>
+                </div>
+            )}
+        </Formik>
     );
 };
 
